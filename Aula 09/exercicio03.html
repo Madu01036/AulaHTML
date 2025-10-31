@@ -1,15 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Display flex</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        .rodape {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            background-color: brown;
+            color: aliceblue;
+            padding: 3.5px;
+            justify-content: center;
+           
+
+        }
+
+        .nav {
+     
+            display: flex;
+            padding: 25px 0px 15px 0px;
+            flex-direction: column;
+            background-color: brown;
+            justify-content: space-between;
+            gap: 35px;
+            align-items: center;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+        }
+
+        .links a {
+            color: aliceblue;
+            font-size: 15px;
+            padding: 4px;
+            border: 2px solid white;
+        }
+
+
+        .centro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 253px)
+        }
+    </style>
+
+
+
 </head>
+
 <body>
-    <div>
-        <div>
-            
+
+    <!-- O flex -->
+    <!-- Sem o flex, o padrão é block, que ficara um em baixo do outro -->
+    <div class="nav">
+        <div><img src="logo_etec_fg_1000x274.png" alt="" width="350px"></div>
+        <div class="links">
+            <div><a href="exercicio01.html">Exercicio 1</a></div>
+            <div><a href="exercicio02.html">Exercicio 2</a></div>
+            <div><a href="exercicio03.html">Exercicio 3</a></div>
+            <div><a href="exercicio04.html">Exercicio 4</a></div>
+            <div><a href="exercicio05.html">Exercicio 5</a></div>
         </div>
+
+
     </div>
+
+    <div class="centro">
+        <p>Exercicio 3</p>
+    </div>
+
+    <div class="rodape">
+        <p>Elaborado por Ronaldo Béo de Almeida</p>
+
+    </div>
+
 </body>
+
 </html>

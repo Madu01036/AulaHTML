@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        height: 100vh;
+        background: #eaeaea !important;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      select {
+        padding: 4px 8px;
+      }
+
+      input {
+        padding: 6px 12px;
+      }
+
+      .content {
+        position: absolute;
+        padding-top: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        min-width: 600px;
+      }
+
+      .coluna {
+        margin: 16px 0px 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .col-images {
+        display: flex;
+        justify-content: center;
+        gap: 50%;
+      }
+
+      .colIMG {
+        padding: 12px;
+      }
+
+      .cod {
+        width: 15px;
+      }
+
+      .int {
+        background-color: black;
+        color: white;
+        width: 40px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      .botao {
+        background-color: black;
+        padding: 10px 8px;
+        border-radius: 7.5px;
+        text-align: center;
+        color: white;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .col {
+        display: flex;
+        justify-content: center;
+      }
+
+      .col a {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      .col a:hover {
+        text-decoration: double;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 35px;
+      }
+      .user{
+        width: 139px;
+        color: black;
+        background-color: white;
+      }
+
+      .user:hover {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <img src="nsaonline.png" alt="" style="max-width: 30%; height: auto" />
+
+      <form action="">
+        <div class="row">
+          <div class="coluna">
+            <label for="user">Entrar como:</label>
+            <select name="user" id="user" class="user">
+              <option value="">ALUNO</option>
+              <option value="">ETEC</option>
+              <option value="">PROFESSOR</option>
+              <option value="">RESPONSÁVEL</option>
+              <option value="">SUPERVISÃO</option>
+              <option value="">MONITORAMENTO</option>
+            </select>
+          </div>
+          <div class="coluna">
+            <label for="cod">Cod. Etec:</label>
+            <input type="text" name="cod" class="cod" />
+            <input type="submit" value="?" class="int" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="coluna">
+            <label for="RM">RM:</label>
+            <input
+              type="text"
+              name="RM"
+              placeholder="Digite seu login"
+              style="
+                max-width: 100px;
+                border-radius: 5px;
+                border: 1px solid rgb(118, 118, 118);
+              "
+            />
+          </div>
+          <div class="coluna">
+            <label for="senha">Senha:</label>
+            <input
+              type="text"
+              name="senha"
+              placeholder="Digite sua senha"
+              style="
+                max-width: 100px;
+                border-radius: 5px;
+                border: 1px solid rgb(118, 118, 118);
+              "
+            />
+          </div>
+          <div class="coluna">
+            <button class="botao">ENTRAR</button>
+          </div>
+        </div>
+
+        <br />
+        <div class="col"><a href="">Solicitar nova senha</a></div>
+      </form>
+
+      <div class="col-images">
+        <img class="colIMG" src="android.png" alt="" width="100px" />
+        <img class="colIMG" src="apple-ios.png" alt="" width="100px" />
+      </div>
+
+      <div
+        style="
+          border-radius: 0px 0px 5px 5px;
+          background-color: black;
+          color: white;
+          width: 100%;
+          text-align: center;
+          padding: 8px 0px;
+        "
+      >
+        © Sistema NSA - Desde 2008
+      </div>
+    </div>
+  </body>
+</html>
